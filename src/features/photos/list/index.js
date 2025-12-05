@@ -21,7 +21,12 @@ export default function PhotosList() {
 
   const photosListItems = photos.map(({ id, caption, imageUrl }) => (
     <li key={id}>
+      <div className="photo-wrapper">
+    <a href={imageUrl} target="_blank" rel="noopener noreferrer">
       <img alt={caption} src={imageUrl} />
+    </a>
+  </div>
+      
       <div>
         <p>{caption}</p>
         <button

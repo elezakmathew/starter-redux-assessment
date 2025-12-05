@@ -5,7 +5,7 @@ export const fetchSuggestion =
   async () => {   
     const response = await fetch('http://localhost:3004/api/suggestion');
     const data = await response.json();
-    return data;
+    return data.data;
   });
 const initialState = {
   suggestion: '',

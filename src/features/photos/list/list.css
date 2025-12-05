@@ -24,3 +24,16 @@ img {
   height: 250px;
   object-fit: cover;
 }
+.photo-wrapper {
+  width: 100%;
+  height: 200px;       /* Adjust if needed */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.photo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* ensures balanced look */
+  display: block;
+}
